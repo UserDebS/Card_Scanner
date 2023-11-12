@@ -10,7 +10,7 @@ image_names = ['Picture', 'aadhaar', 'pan', 'voter']
 current_folder = os.getcwd()
 target_folder = os.path.join(current_folder, 'Images')
 
-mongouri = 'mongodb+srv://roumya2020second:'+ uprase.quote('ImDS@6294MySQL') +'@medicure.csyloil.mongodb.net/?retryWrites=true&w=majority'
+mongouri = 'mongodb+srv://<account>:'+ uprase.quote('<password>') +'@medicure.csyloil.mongodb.net/?retryWrites=true&w=majority'
 
 client = pymongo.MongoClient(mongouri)
 execute = client.verification.user_details
