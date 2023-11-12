@@ -29,9 +29,13 @@ def InsertImages(uid):
     }
     result = execute.find_one(filter)
     username = result['Name']
+    gender = result['Gender']
+    print(f'Name : {username}\nGender : {gender}')
     for category in image_names:
         with open(f'{target_folder}/{username}_{category}.png', 'wb') as file:
             file.write(result[f'{category}'])
+            print(f'Successfully fetched {category}')
+    print(f'Go to {target_folder}\n')
     
 
 #%% main
