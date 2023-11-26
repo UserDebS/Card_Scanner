@@ -5,7 +5,7 @@ import urllib.parse as uprase
 #%% initializations
 uid = '406d2d1b'
 
-mongouri = 'mongodb+srv://roumya2020second:'+ uprase.quote('ImDS@6294MySQL') +'@medicure.csyloil.mongodb.net/?retryWrites=true&w=majority'
+mongouri = 'mongodb+srv://<username>:'+ uprase.quote('password') +'@medicure.csyloil.mongodb.net/?retryWrites=true&w=majority'
 
 client = pymongo.MongoClient(mongouri)
 execute = client.verification.user_details
