@@ -4,8 +4,6 @@
 #define RST_PIN 9 
 #define SS_PIN 10 
 
-long count = 0;
-
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 void setup() {
   Serial.begin(9600);  // Initialize serial communications with the PC
