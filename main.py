@@ -19,8 +19,6 @@ target_folder = os.path.join(current_folder, 'Images')
 
 mongouri = 'mongodb+srv://' + account_name + ':'+ uprase.quote(password) +'@medicure.csyloil.mongodb.net/?retryWrites=true&w=majority'
 
-print(mongouri)
-
 client = pymongo.MongoClient(mongouri)
 execute = client.verification.user_details
 
